@@ -13,6 +13,78 @@ main {
 
 #root {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+/* .word-search{
+border-radius: 12px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+padding: 20px;
+background-color: #f9f9f9;
+margin-bottom: 20px;
+width: 300px;
+text-align: center;
+} */
+
+.definition-display{
+border-radius: 12px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+padding: 20px;
+background-color: #f9f9f9;
+width: 600px;
+text-align: left;
+max-height: 400px;
+overflow-y: auto;
+}
+
+
+.word-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 15px auto;
+  padding: 20px;
+  max-width: 500px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.word-search input {
+  flex: 1;
+  padding: 12px 15px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.word-search input:focus {
+  border-color: #293092; 
+  box-shadow: 0 0 6px rgba(79, 70, 229, 0.3);
+}
+
+.word-search button {
+  padding: 12px 18px;
+  background: #215749; 
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.word-search button:hover {
+  background: #02022b; 
+  transform: translateY(-2px);
+}
+
+.word-search button:active {
+  transform: scale(0.97);
+
 }
